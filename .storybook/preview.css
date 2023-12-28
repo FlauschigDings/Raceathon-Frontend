@@ -1,0 +1,11 @@
+/* .storybook/preview.css */
+
+/* Set dark background color */
+body {
+	background-color: rgb(30 41 59); /* Adjust this color as needed */
+}
+
+/* Set default text color to light */
+body {
+	color: #ffffff; /* Adjust this color as needed */
+}

@@ -3,7 +3,7 @@
 	import { Meta, Story, Template } from "@storybook/addon-svelte-csf";
 </script>
 
-<Meta title="CopyButton" component={CopyButton}/>
+<Meta title="Button/CopyButton" component={CopyButton}/>
 
 <Template let:args>
 	<CopyButton clipText={args.clip}/>

@@ -13,7 +13,7 @@
 
 <div class="flex flex-col gap-2 p-1">
 	<Button
-		click={async () => {
+		on:click={async () => {
 			await network.sponsor.deleteSponsor(id)
 			callback()
 		}}

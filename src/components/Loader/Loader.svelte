@@ -1,10 +1,12 @@
 <script lang="ts">
+	import { Size, type Size as SizeType } from "./loader";
+
+	export let size: SizeType = Size.MD
 </script>
 
 <style lang="scss">
 	.loader {
-		@apply w-16 h-16;
-		@apply border-solid border-8 border-gray-600
+		@apply border-solid border-gray-600
 			 border-t-indigo-400
 			   rounded-full;
 		animation: spin 1s linear infinite;
@@ -15,5 +17,5 @@
 	}
 	</style>
 	
-<div class="loader">
+<div class="{size} loader">
 </div>

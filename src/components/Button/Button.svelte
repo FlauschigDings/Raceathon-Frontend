@@ -1,15 +1,15 @@
 <script lang="ts">
-    import { ButtonDesign } from "./button";
+	import { createEventDispatcher } from "svelte";
+	import { ButtonDesign } from "./button";
+
+	const dispatcher = createEventDispatcher()
 
 	let className = '';
 	export { className as class }
 	export let style: string = ""
-	export let click: () => void = () => {}
 	export let name: string | undefined = undefined
 	export let formaction: string | undefined = undefined
 	export let disabled: boolean = false
-
-
 
 	export let design: ButtonDesign = ButtonDesign.UNSTYLED
 
@@ -41,7 +41,7 @@
 		   ${className}
 		   ${buttonDesign}
 	`}
-	on:click={click}
+	on:click={() => dispatcher('click')}
 >
 	<slot/>
 </button>

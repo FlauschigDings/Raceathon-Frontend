@@ -1,7 +1,7 @@
 <script>
 	import '../global.css'
 	import Badge from "@components/Badge/Badge.svelte";
-    import { Badges } from '@components/Badge/badge';
+	import { Badges } from '@components/Badge/badge';
 	import { Meta, Story, Template } from "@storybook/addon-svelte-csf";
 </script>
 

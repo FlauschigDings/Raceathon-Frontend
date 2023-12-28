@@ -27,6 +27,6 @@
 	}
 </script>
 
-<Button design={ButtonDesign.SECONDARY} click={() => copy(clipText)}>
+<Button design={ButtonDesign.SECONDARY} on:click={() => copy(clipText)}>
 	<Icon className="fill-white mr-1" src={(state)? BsClipboard2 : BsClipboard2Check}/>{stateText}
 </Button>

@@ -1,10 +1,10 @@
 <script>
 	import Button from "@components/Button/Button.svelte";
-    import { ButtonDesign } from "@components/Button/button";
+	import { ButtonDesign } from "@components/Button/button";
 	import { Meta, Story, Template } from "@storybook/addon-svelte-csf";
 </script>
 
-<Meta title="Button" component={Button}/>
+<Meta title="Button/Button" component={Button}/>
 
 <Template let:args>
 	<div class="block">

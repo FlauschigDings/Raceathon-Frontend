@@ -11,3 +11,9 @@ export enum ButtonDesign {
 	PENDING    = "pending",
 
 }
+
+export enum IconDesign {
+	UNSTYLED = "unstyled",
+	PRIMARY = "primary",
+	SECONDARY = "secondary",
+}
